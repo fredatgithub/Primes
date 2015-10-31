@@ -1,0 +1,4 @@
+language: csharp
+solution: Primes.sln
+notifications:
+  email: false
