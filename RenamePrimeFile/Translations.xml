@@ -136,7 +136,17 @@
     <frenchValue>Il y a</frenchValue>
   </term>
   <term>
+    <name>There is</name>
+    <englishValue>There is</englishValue>
+    <frenchValue>Il y a</frenchValue>
+  </term>
+  <term>
     <name>toCut</name>
+    <englishValue>to cut</englishValue>
+    <frenchValue>à couper</frenchValue>
+  </term>
+   <term>
+    <name>to cut</name>
     <englishValue>to cut</englishValue>
     <frenchValue>à couper</frenchValue>
   </term>
@@ -145,8 +155,18 @@
     <englishValue>No text has been selected</englishValue>
     <frenchValue>Pas de texte a été selectionné</frenchValue>
   </term>
+   <term>
+    <name>No text has been selected</name>
+    <englishValue>No text has been selected</englishValue>
+    <frenchValue>Aucun texte n'a été selectionné</frenchValue>
+  </term>
   <term>
     <name>ThereIsNothingToCopy</name>
+    <englishValue>There is nothing to copy</englishValue>
+    <frenchValue>Il n'y a rien à copier</frenchValue>
+  </term>
+  <term>
+    <name>There is nothing to copy</name>
     <englishValue>There is nothing to copy</englishValue>
     <frenchValue>Il n'y a rien à copier</frenchValue>
   </term>
@@ -1251,26 +1271,6 @@
     <frenchValue>Le chemin de sauvegarde du fichier ne peut être vide</frenchValue>
   </term>
   <term>
-    <name>There is nothing to copy</name>
-    <englishValue>There is nothing to copy</englishValue>
-    <frenchValue>Il n'y a rien à copier</frenchValue>
-  </term>
-  <term>
-    <name>There is</name>
-    <englishValue>There is</englishValue>
-    <frenchValue>Il y a</frenchValue>
-  </term>
-  <term>
-    <name>to cut</name>
-    <englishValue>to cut</englishValue>
-    <frenchValue>à couper</frenchValue>
-  </term>
-  <term>
-    <name>No text has been selected</name>
-    <englishValue>No text has been selected</englishValue>
-    <frenchValue>Pas de texte n'a été sélectionné</frenchValue>
-  </term>
-  <term>
     <name>the term</name>
     <englishValue>the term</englishValue>
     <frenchValue>le terme</frenchValue>
@@ -1459,5 +1459,35 @@
     <name>Replace</name>
     <englishValue>Replace</englishValue>
     <frenchValue>Remplacer</frenchValue>
+  </term>
+  <term>
+    <name>The list doesn't have any item</name>
+    <englishValue>The list doesn't have any item</englishValue>
+    <frenchValue>La liste n'a pas d'élément</frenchValue>
+  </term>
+  <term>
+    <name>View</name>
+    <englishValue>View</englishValue>
+    <frenchValue>Afficher</frenchValue>
+  </term>
+  <term>
+    <name>The list doesn't have any item to view</name>
+    <englishValue>The list doesn't have any item to view</englishValue>
+    <frenchValue>La liste n'a pas d'item a visualiser</frenchValue>
+  </term>
+  <term>
+    <name>Check off some items</name>
+    <englishValue>Check off some items</englishValue>
+    <frenchValue>Cochez un ou plusieurs éléments</frenchValue>
+  </term>
+  <term>
+    <name>No selected item</name>
+    <englishValue>No selected item</englishValue>
+    <frenchValue>Pas d'élément coché</frenchValue>
+  </term>
+  <term>
+    <name>File modified</name>
+    <englishValue>File modified</englishValue>
+    <frenchValue>Fichier modifié</frenchValue>
   </term>
 </terms>
