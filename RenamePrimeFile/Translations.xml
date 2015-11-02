@@ -1506,9 +1506,9 @@
     <frenchValue>Tous les fichiers dans</frenchValue>
   </term>
   <term>
-    <name>includes sub-directories</name>
-    <englishValue>includes sub-directories</englishValue>
-    <frenchValue>incluant les sous répertoires</frenchValue>
+    <name>Includes sub-directories</name>
+    <englishValue>Includes sub-directories</englishValue>
+    <frenchValue>Incluant les sous répertoires</frenchValue>
   </term>
   <term>
     <name>Cut file every</name>
