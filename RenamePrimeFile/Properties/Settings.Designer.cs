@@ -178,5 +178,29 @@ namespace RenamePrimeFile.Properties {
                 this["textBoxSeveralFiles"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string textBoxCurFileSize {
+            get {
+                return ((string)(this["textBoxCurFileSize"]));
+            }
+            set {
+                this["textBoxCurFileSize"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool checkBoxDeleteSourceFile {
+            get {
+                return ((bool)(this["checkBoxDeleteSourceFile"]));
+            }
+            set {
+                this["checkBoxDeleteSourceFile"] = value;
+            }
+        }
     }
 }

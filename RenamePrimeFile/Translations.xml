@@ -1490,4 +1490,39 @@
     <englishValue>File modified</englishValue>
     <frenchValue>Fichier modifié</frenchValue>
   </term>
+  <term>
+    <name>One file</name>
+    <englishValue>One file</englishValue>
+    <frenchValue>Un fichier</frenchValue>
+  </term>
+  <term>
+    <name>Rename</name>
+    <englishValue>Rename</englishValue>
+    <frenchValue>Renommer</frenchValue>
+  </term>
+  <term>
+    <name>All files in</name>
+    <englishValue>All files in</englishValue>
+    <frenchValue>Tous les fichiers dans</frenchValue>
+  </term>
+  <term>
+    <name>includes sub-directories</name>
+    <englishValue>includes sub-directories</englishValue>
+    <frenchValue>incluant les sous répertoires</frenchValue>
+  </term>
+  <term>
+    <name>Cut file every</name>
+    <englishValue>Cut file every</englishValue>
+    <frenchValue>Couper le fichier à chaque</frenchValue>
+  </term>
+  <term>
+    <name>MB</name>
+    <englishValue>MB</englishValue>
+    <frenchValue>MO</frenchValue>
+  </term>
+  <term>
+    <name>Delete source file after rename</name>
+    <englishValue>Delete source file after rename</englishValue>
+    <frenchValue>Effacer le fichier source après renommage</frenchValue>
+  </term>
 </terms>

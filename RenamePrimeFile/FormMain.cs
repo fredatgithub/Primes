@@ -295,6 +295,12 @@ namespace RenamePrimeFile
       Top = Settings.Default.WindowTop < 0 ? 0 : Settings.Default.WindowTop;
       Left = Settings.Default.WindowLeft < 0 ? 0 : Settings.Default.WindowLeft;
       SetDisplayOption(Settings.Default.DisplayToolStripMenuItem);
+      textBoxOnefile.Text = Settings.Default.textBoxOnefile;
+      textBoxSeveralFiles.Text = Settings.Default.textBoxSeveralFiles;
+      checkBoxCutFile.Checked = Settings.Default.checkBoxCutFile;
+      checkBoxIncludeSubDirectories.Checked = Settings.Default.checkBoxIncludeSubDirectories;
+      textBoxCurFileSize.Text = Settings.Default.textBoxCurFileSize;
+      checkBoxDeleteSourceFile.Checked = Settings.Default.checkBoxDeleteSourceFile;
       LoadConfigurationOptions();
     }
 
@@ -306,6 +312,12 @@ namespace RenamePrimeFile
       Settings.Default.WindowTop = Top;
       Settings.Default.LastLanguageUsed = frenchToolStripMenuItem.Checked ? "French" : "English";
       Settings.Default.DisplayToolStripMenuItem = GetDisplayOption();
+      Settings.Default.textBoxOnefile = textBoxOnefile.Text;
+      Settings.Default.textBoxSeveralFiles = textBoxSeveralFiles.Text;
+      Settings.Default.checkBoxCutFile = checkBoxCutFile.Checked;
+      Settings.Default.checkBoxIncludeSubDirectories = checkBoxIncludeSubDirectories.Checked;
+      Settings.Default.textBoxCurFileSize = textBoxCurFileSize.Text;
+      Settings.Default.checkBoxDeleteSourceFile = checkBoxDeleteSourceFile.Checked;
       SaveConfigurationOptions();
       Settings.Default.Save();
     }
@@ -409,7 +421,14 @@ namespace RenamePrimeFile
           MediumToolStripMenuItem.Text = _languageDicoEn["Medium"];
           LargeToolStripMenuItem.Text = _languageDicoEn["Large"];
 
-
+          labelOneFile.Text = _languageDicoEn["One file"];
+          labelSeveralFiles.Text = _languageDicoEn["All files in"];
+          checkBoxIncludeSubDirectories.Text = _languageDicoEn["includes sub-directories"];
+          checkBoxCutFile.Text = _languageDicoEn["Cut file every"];
+          checkBoxDeleteSourceFile.Text = _languageDicoEn["Delete source file after rename"];
+          labelMB.Text = _languageDicoEn["MB"];
+          buttonRenameOneFile.Text = _languageDicoEn["Rename"];
+          buttonRenameSeveralFiles.Text = _languageDicoEn["Rename"];
           _currentLanguage = "English";
           break;
         case "French":
@@ -445,7 +464,14 @@ namespace RenamePrimeFile
           SmallToolStripMenuItem.Text = _languageDicoFr["Small"];
           MediumToolStripMenuItem.Text = _languageDicoFr["Medium"];
           LargeToolStripMenuItem.Text = _languageDicoFr["Large"];
-
+          labelOneFile.Text = _languageDicoFr["One file"];
+          labelSeveralFiles.Text = _languageDicoFr["All files in"];
+          checkBoxIncludeSubDirectories.Text = _languageDicoFr["includes sub-directories"];
+          checkBoxCutFile.Text = _languageDicoFr["Cut file every"];
+          checkBoxDeleteSourceFile.Text = _languageDicoFr["Delete source file after rename"];
+          labelMB.Text = _languageDicoFr["MB"];
+          buttonRenameOneFile.Text = _languageDicoFr["Rename"];
+          buttonRenameSeveralFiles.Text = _languageDicoFr["Rename"];
           _currentLanguage = "French";
           break;
         default:
@@ -619,13 +645,13 @@ namespace RenamePrimeFile
       return result;
     }
 
-    private string PeekFile()
+    private static string PeekFile()
     {
       string result = string.Empty;
       OpenFileDialog fd = new OpenFileDialog();
       if (fd.ShowDialog() == DialogResult.OK)
       {
-        result = fd.SafeFileName;
+        result = fd.FileName;
       }
 
       return result;
@@ -718,6 +744,16 @@ namespace RenamePrimeFile
       {
         // do something
       }
+    }
+
+    private void buttonPickFile_Click(object sender, EventArgs e)
+    {
+      textBoxOnefile.Text = PeekFile();
+    }
+
+    private void buttonPickDirectory_Click(object sender, EventArgs e)
+    {
+      textBoxSeveralFiles.Text = PeekDirectory();
     }
   }
 }

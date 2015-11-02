@@ -77,6 +77,7 @@
       this.checkBoxCutFile = new System.Windows.Forms.CheckBox();
       this.textBoxCurFileSize = new System.Windows.Forms.TextBox();
       this.labelMB = new System.Windows.Forms.Label();
+      this.checkBoxDeleteSourceFile = new System.Windows.Forms.CheckBox();
       this.menuStrip1.SuspendLayout();
       this.SuspendLayout();
       // 
@@ -93,7 +94,7 @@
       this.menuStrip1.Location = new System.Drawing.Point(0, 0);
       this.menuStrip1.Name = "menuStrip1";
       this.menuStrip1.Padding = new System.Windows.Forms.Padding(5, 2, 0, 2);
-      this.menuStrip1.Size = new System.Drawing.Size(911, 28);
+      this.menuStrip1.Size = new System.Drawing.Size(997, 28);
       this.menuStrip1.TabIndex = 1;
       this.menuStrip1.Text = "menuStrip1";
       // 
@@ -378,13 +379,14 @@
       // 
       // buttonPickFile
       // 
-      this.buttonPickFile.Location = new System.Drawing.Point(821, 79);
+      this.buttonPickFile.Location = new System.Drawing.Point(928, 79);
       this.buttonPickFile.Margin = new System.Windows.Forms.Padding(4);
       this.buttonPickFile.Name = "buttonPickFile";
       this.buttonPickFile.Size = new System.Drawing.Size(40, 28);
       this.buttonPickFile.TabIndex = 2;
       this.buttonPickFile.Text = "...";
       this.buttonPickFile.UseVisualStyleBackColor = true;
+      this.buttonPickFile.Click += new System.EventHandler(this.buttonPickFile_Click);
       // 
       // labelOneFile
       // 
@@ -403,7 +405,7 @@
       this.textBoxOnefile.Location = new System.Drawing.Point(119, 79);
       this.textBoxOnefile.Margin = new System.Windows.Forms.Padding(4);
       this.textBoxOnefile.Name = "textBoxOnefile";
-      this.textBoxOnefile.Size = new System.Drawing.Size(666, 27);
+      this.textBoxOnefile.Size = new System.Drawing.Size(801, 27);
       this.textBoxOnefile.TabIndex = 4;
       // 
       // buttonRenameOneFile
@@ -423,7 +425,7 @@
       this.textBoxSeveralFiles.Location = new System.Drawing.Point(119, 174);
       this.textBoxSeveralFiles.Margin = new System.Windows.Forms.Padding(4);
       this.textBoxSeveralFiles.Name = "textBoxSeveralFiles";
-      this.textBoxSeveralFiles.Size = new System.Drawing.Size(666, 27);
+      this.textBoxSeveralFiles.Size = new System.Drawing.Size(801, 27);
       this.textBoxSeveralFiles.TabIndex = 8;
       // 
       // labelSeveralFiles
@@ -439,18 +441,19 @@
       // 
       // buttonPickDirectory
       // 
-      this.buttonPickDirectory.Location = new System.Drawing.Point(821, 174);
+      this.buttonPickDirectory.Location = new System.Drawing.Point(928, 174);
       this.buttonPickDirectory.Margin = new System.Windows.Forms.Padding(4);
       this.buttonPickDirectory.Name = "buttonPickDirectory";
       this.buttonPickDirectory.Size = new System.Drawing.Size(40, 28);
       this.buttonPickDirectory.TabIndex = 6;
       this.buttonPickDirectory.Text = "...";
       this.buttonPickDirectory.UseVisualStyleBackColor = true;
+      this.buttonPickDirectory.Click += new System.EventHandler(this.buttonPickDirectory_Click);
       // 
       // buttonRenameSeveralFiles
       // 
       this.buttonRenameSeveralFiles.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      this.buttonRenameSeveralFiles.Location = new System.Drawing.Point(121, 288);
+      this.buttonRenameSeveralFiles.Location = new System.Drawing.Point(121, 313);
       this.buttonRenameSeveralFiles.Margin = new System.Windows.Forms.Padding(4);
       this.buttonRenameSeveralFiles.Name = "buttonRenameSeveralFiles";
       this.buttonRenameSeveralFiles.Size = new System.Drawing.Size(93, 28);
@@ -477,18 +480,18 @@
       this.checkBoxCutFile.Location = new System.Drawing.Point(121, 248);
       this.checkBoxCutFile.Margin = new System.Windows.Forms.Padding(4);
       this.checkBoxCutFile.Name = "checkBoxCutFile";
-      this.checkBoxCutFile.Size = new System.Drawing.Size(84, 24);
+      this.checkBoxCutFile.Size = new System.Drawing.Size(129, 24);
       this.checkBoxCutFile.TabIndex = 11;
-      this.checkBoxCutFile.Text = "Cut file";
+      this.checkBoxCutFile.Text = "Cut file every";
       this.checkBoxCutFile.UseVisualStyleBackColor = true;
       // 
       // textBoxCurFileSize
       // 
       this.textBoxCurFileSize.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      this.textBoxCurFileSize.Location = new System.Drawing.Point(224, 248);
+      this.textBoxCurFileSize.Location = new System.Drawing.Point(257, 248);
       this.textBoxCurFileSize.Margin = new System.Windows.Forms.Padding(4);
       this.textBoxCurFileSize.Name = "textBoxCurFileSize";
-      this.textBoxCurFileSize.Size = new System.Drawing.Size(102, 27);
+      this.textBoxCurFileSize.Size = new System.Drawing.Size(85, 27);
       this.textBoxCurFileSize.TabIndex = 12;
       this.textBoxCurFileSize.Text = "50";
       // 
@@ -503,11 +506,24 @@
       this.labelMB.TabIndex = 13;
       this.labelMB.Text = "MB";
       // 
+      // checkBoxDeleteSourceFile
+      // 
+      this.checkBoxDeleteSourceFile.AutoSize = true;
+      this.checkBoxDeleteSourceFile.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+      this.checkBoxDeleteSourceFile.Location = new System.Drawing.Point(119, 280);
+      this.checkBoxDeleteSourceFile.Margin = new System.Windows.Forms.Padding(4);
+      this.checkBoxDeleteSourceFile.Name = "checkBoxDeleteSourceFile";
+      this.checkBoxDeleteSourceFile.Size = new System.Drawing.Size(263, 24);
+      this.checkBoxDeleteSourceFile.TabIndex = 14;
+      this.checkBoxDeleteSourceFile.Text = "Delete source file after rename";
+      this.checkBoxDeleteSourceFile.UseVisualStyleBackColor = true;
+      // 
       // FormMain
       // 
       this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
       this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-      this.ClientSize = new System.Drawing.Size(911, 534);
+      this.ClientSize = new System.Drawing.Size(997, 534);
+      this.Controls.Add(this.checkBoxDeleteSourceFile);
       this.Controls.Add(this.labelMB);
       this.Controls.Add(this.textBoxCurFileSize);
       this.Controls.Add(this.checkBoxCutFile);
@@ -586,5 +602,6 @@
     private System.Windows.Forms.CheckBox checkBoxCutFile;
     private System.Windows.Forms.TextBox textBoxCurFileSize;
     private System.Windows.Forms.Label labelMB;
+    private System.Windows.Forms.CheckBox checkBoxDeleteSourceFile;
   }
 }
