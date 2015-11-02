@@ -109,9 +109,6 @@
     <Content Include="Resources\primes2-100000.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Resources\primes90025241-182687657.txt">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
     <Content Include="Translations.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
