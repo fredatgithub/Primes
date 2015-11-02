@@ -26,6 +26,7 @@ using System.Reflection;
 using System.Windows.Forms;
 using System.Xml.Linq;
 using RenamePrimeFile.Properties;
+using Tools;
 
 namespace RenamePrimeFile
 {
@@ -455,7 +456,11 @@ namespace RenamePrimeFile
 
     private void cutToolStripMenuItem_Click(object sender, EventArgs e)
     {
-      Control focusedControl = FindFocusedControl(new List<Control> { }); // add your controls in the List
+      Control focusedControl = FindFocusedControl(new List<Control>
+      {
+        textBoxOnefile,
+        textBoxSeveralFiles
+      }); 
       var tb = focusedControl as TextBox;
       if (tb != null)
       {
@@ -465,7 +470,11 @@ namespace RenamePrimeFile
 
     private void copyToolStripMenuItem_Click(object sender, EventArgs e)
     {
-      Control focusedControl = FindFocusedControl(new List<Control> { }); // add your controls in the List
+      Control focusedControl = FindFocusedControl(new List<Control>
+      {
+        textBoxOnefile,
+        textBoxSeveralFiles
+      });
       var tb = focusedControl as TextBox;
       if (tb != null)
       {
@@ -475,7 +484,11 @@ namespace RenamePrimeFile
 
     private void pasteToolStripMenuItem_Click(object sender, EventArgs e)
     {
-      Control focusedControl = FindFocusedControl(new List<Control> { }); // add your controls in the List
+      Control focusedControl = FindFocusedControl(new List<Control>
+      {
+        textBoxOnefile,
+        textBoxSeveralFiles
+      }); 
       var tb = focusedControl as TextBox;
       if (tb != null)
       {
@@ -485,7 +498,11 @@ namespace RenamePrimeFile
 
     private void selectAllToolStripMenuItem_Click(object sender, EventArgs e)
     {
-      Control focusedControl = FindFocusedControl(new List<Control> { }); // add your controls in the List
+      Control focusedControl = FindFocusedControl(new List<Control>
+      {
+        textBoxOnefile,
+        textBoxSeveralFiles
+      }); 
       TextBox control = focusedControl as TextBox;
       if (control != null) control.SelectAll();
     }
