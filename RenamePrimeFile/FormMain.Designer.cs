@@ -94,7 +94,7 @@
       this.menuStrip1.Location = new System.Drawing.Point(0, 0);
       this.menuStrip1.Name = "menuStrip1";
       this.menuStrip1.Padding = new System.Windows.Forms.Padding(5, 2, 0, 2);
-      this.menuStrip1.Size = new System.Drawing.Size(997, 28);
+      this.menuStrip1.Size = new System.Drawing.Size(1065, 28);
       this.menuStrip1.TabIndex = 1;
       this.menuStrip1.Text = "menuStrip1";
       // 
@@ -379,7 +379,7 @@
       // 
       // buttonPickFile
       // 
-      this.buttonPickFile.Location = new System.Drawing.Point(928, 79);
+      this.buttonPickFile.Location = new System.Drawing.Point(969, 79);
       this.buttonPickFile.Margin = new System.Windows.Forms.Padding(4);
       this.buttonPickFile.Name = "buttonPickFile";
       this.buttonPickFile.Size = new System.Drawing.Size(40, 28);
@@ -392,7 +392,7 @@
       // 
       this.labelOneFile.AutoSize = true;
       this.labelOneFile.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      this.labelOneFile.Location = new System.Drawing.Point(29, 79);
+      this.labelOneFile.Location = new System.Drawing.Point(13, 79);
       this.labelOneFile.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
       this.labelOneFile.Name = "labelOneFile";
       this.labelOneFile.Size = new System.Drawing.Size(67, 20);
@@ -402,7 +402,7 @@
       // textBoxOnefile
       // 
       this.textBoxOnefile.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      this.textBoxOnefile.Location = new System.Drawing.Point(119, 79);
+      this.textBoxOnefile.Location = new System.Drawing.Point(147, 79);
       this.textBoxOnefile.Margin = new System.Windows.Forms.Padding(4);
       this.textBoxOnefile.Name = "textBoxOnefile";
       this.textBoxOnefile.Size = new System.Drawing.Size(801, 27);
@@ -411,7 +411,7 @@
       // buttonRenameOneFile
       // 
       this.buttonRenameOneFile.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      this.buttonRenameOneFile.Location = new System.Drawing.Point(119, 125);
+      this.buttonRenameOneFile.Location = new System.Drawing.Point(147, 125);
       this.buttonRenameOneFile.Margin = new System.Windows.Forms.Padding(4);
       this.buttonRenameOneFile.Name = "buttonRenameOneFile";
       this.buttonRenameOneFile.Size = new System.Drawing.Size(93, 28);
@@ -422,7 +422,7 @@
       // textBoxSeveralFiles
       // 
       this.textBoxSeveralFiles.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      this.textBoxSeveralFiles.Location = new System.Drawing.Point(119, 174);
+      this.textBoxSeveralFiles.Location = new System.Drawing.Point(147, 174);
       this.textBoxSeveralFiles.Margin = new System.Windows.Forms.Padding(4);
       this.textBoxSeveralFiles.Name = "textBoxSeveralFiles";
       this.textBoxSeveralFiles.Size = new System.Drawing.Size(801, 27);
@@ -432,7 +432,7 @@
       // 
       this.labelSeveralFiles.AutoSize = true;
       this.labelSeveralFiles.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      this.labelSeveralFiles.Location = new System.Drawing.Point(29, 174);
+      this.labelSeveralFiles.Location = new System.Drawing.Point(13, 174);
       this.labelSeveralFiles.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
       this.labelSeveralFiles.Name = "labelSeveralFiles";
       this.labelSeveralFiles.Size = new System.Drawing.Size(82, 20);
@@ -441,7 +441,7 @@
       // 
       // buttonPickDirectory
       // 
-      this.buttonPickDirectory.Location = new System.Drawing.Point(928, 174);
+      this.buttonPickDirectory.Location = new System.Drawing.Point(969, 174);
       this.buttonPickDirectory.Margin = new System.Windows.Forms.Padding(4);
       this.buttonPickDirectory.Name = "buttonPickDirectory";
       this.buttonPickDirectory.Size = new System.Drawing.Size(40, 28);
@@ -453,7 +453,7 @@
       // buttonRenameSeveralFiles
       // 
       this.buttonRenameSeveralFiles.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      this.buttonRenameSeveralFiles.Location = new System.Drawing.Point(121, 313);
+      this.buttonRenameSeveralFiles.Location = new System.Drawing.Point(149, 313);
       this.buttonRenameSeveralFiles.Margin = new System.Windows.Forms.Padding(4);
       this.buttonRenameSeveralFiles.Name = "buttonRenameSeveralFiles";
       this.buttonRenameSeveralFiles.Size = new System.Drawing.Size(93, 28);
@@ -465,7 +465,7 @@
       // 
       this.checkBoxIncludeSubDirectories.AutoSize = true;
       this.checkBoxIncludeSubDirectories.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      this.checkBoxIncludeSubDirectories.Location = new System.Drawing.Point(121, 219);
+      this.checkBoxIncludeSubDirectories.Location = new System.Drawing.Point(149, 219);
       this.checkBoxIncludeSubDirectories.Margin = new System.Windows.Forms.Padding(4);
       this.checkBoxIncludeSubDirectories.Name = "checkBoxIncludeSubDirectories";
       this.checkBoxIncludeSubDirectories.Size = new System.Drawing.Size(210, 24);
@@ -477,7 +477,7 @@
       // 
       this.checkBoxCutFile.AutoSize = true;
       this.checkBoxCutFile.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      this.checkBoxCutFile.Location = new System.Drawing.Point(121, 248);
+      this.checkBoxCutFile.Location = new System.Drawing.Point(149, 248);
       this.checkBoxCutFile.Margin = new System.Windows.Forms.Padding(4);
       this.checkBoxCutFile.Name = "checkBoxCutFile";
       this.checkBoxCutFile.Size = new System.Drawing.Size(129, 24);
@@ -488,7 +488,7 @@
       // textBoxCurFileSize
       // 
       this.textBoxCurFileSize.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      this.textBoxCurFileSize.Location = new System.Drawing.Point(257, 248);
+      this.textBoxCurFileSize.Location = new System.Drawing.Point(371, 248);
       this.textBoxCurFileSize.Margin = new System.Windows.Forms.Padding(4);
       this.textBoxCurFileSize.Name = "textBoxCurFileSize";
       this.textBoxCurFileSize.Size = new System.Drawing.Size(85, 27);
@@ -499,7 +499,7 @@
       // 
       this.labelMB.AutoSize = true;
       this.labelMB.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      this.labelMB.Location = new System.Drawing.Point(350, 249);
+      this.labelMB.Location = new System.Drawing.Point(464, 249);
       this.labelMB.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
       this.labelMB.Name = "labelMB";
       this.labelMB.Size = new System.Drawing.Size(35, 20);
@@ -510,7 +510,7 @@
       // 
       this.checkBoxDeleteSourceFile.AutoSize = true;
       this.checkBoxDeleteSourceFile.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      this.checkBoxDeleteSourceFile.Location = new System.Drawing.Point(119, 280);
+      this.checkBoxDeleteSourceFile.Location = new System.Drawing.Point(147, 280);
       this.checkBoxDeleteSourceFile.Margin = new System.Windows.Forms.Padding(4);
       this.checkBoxDeleteSourceFile.Name = "checkBoxDeleteSourceFile";
       this.checkBoxDeleteSourceFile.Size = new System.Drawing.Size(263, 24);
@@ -522,7 +522,7 @@
       // 
       this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
       this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-      this.ClientSize = new System.Drawing.Size(997, 534);
+      this.ClientSize = new System.Drawing.Size(1065, 534);
       this.Controls.Add(this.checkBoxDeleteSourceFile);
       this.Controls.Add(this.labelMB);
       this.Controls.Add(this.textBoxCurFileSize);

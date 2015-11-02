@@ -420,10 +420,9 @@ namespace RenamePrimeFile
           SmallToolStripMenuItem.Text = _languageDicoEn["Small"];
           MediumToolStripMenuItem.Text = _languageDicoEn["Medium"];
           LargeToolStripMenuItem.Text = _languageDicoEn["Large"];
-
           labelOneFile.Text = _languageDicoEn["One file"];
           labelSeveralFiles.Text = _languageDicoEn["All files in"];
-          checkBoxIncludeSubDirectories.Text = _languageDicoEn["includes sub-directories"];
+          checkBoxIncludeSubDirectories.Text = _languageDicoEn["Includes sub-directories"];
           checkBoxCutFile.Text = _languageDicoEn["Cut file every"];
           checkBoxDeleteSourceFile.Text = _languageDicoEn["Delete source file after rename"];
           labelMB.Text = _languageDicoEn["MB"];
@@ -466,7 +465,7 @@ namespace RenamePrimeFile
           LargeToolStripMenuItem.Text = _languageDicoFr["Large"];
           labelOneFile.Text = _languageDicoFr["One file"];
           labelSeveralFiles.Text = _languageDicoFr["All files in"];
-          checkBoxIncludeSubDirectories.Text = _languageDicoFr["includes sub-directories"];
+          checkBoxIncludeSubDirectories.Text = _languageDicoFr["Includes sub-directories"];
           checkBoxCutFile.Text = _languageDicoFr["Cut file every"];
           checkBoxDeleteSourceFile.Text = _languageDicoFr["Delete source file after rename"];
           labelMB.Text = _languageDicoFr["MB"];
