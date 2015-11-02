@@ -143,7 +143,7 @@ namespace Primes
 
     private static void CreateLanguageFile()
     {
-      List<string> minimumVersion = new List<string>
+      var minimumVersion = new List<string>
       {
         "<?xml version=\"1.0\" encoding=\"utf-8\" ?>",
         "<terms>",
@@ -456,7 +456,7 @@ namespace Primes
 
     private void cutToolStripMenuItem_Click(object sender, EventArgs e)
     {
-      Control focusedControl = FindFocusedControl(new List<Control> { }); // add your controls in the List
+      Control focusedControl = FindFocusedControl(new List<Control> { });
       var tb = focusedControl as TextBox;
       if (tb != null)
       {
@@ -466,7 +466,7 @@ namespace Primes
 
     private void copyToolStripMenuItem_Click(object sender, EventArgs e)
     {
-      Control focusedControl = FindFocusedControl(new List<Control> { }); // add your controls in the List
+      Control focusedControl = FindFocusedControl(new List<Control> { });
       var tb = focusedControl as TextBox;
       if (tb != null)
       {
@@ -476,7 +476,7 @@ namespace Primes
 
     private void pasteToolStripMenuItem_Click(object sender, EventArgs e)
     {
-      Control focusedControl = FindFocusedControl(new List<Control> { }); // add your controls in the List
+      Control focusedControl = FindFocusedControl(new List<Control> { });
       var tb = focusedControl as TextBox;
       if (tb != null)
       {
@@ -486,7 +486,7 @@ namespace Primes
 
     private void selectAllToolStripMenuItem_Click(object sender, EventArgs e)
     {
-      Control focusedControl = FindFocusedControl(new List<Control> { }); // add your controls in the List
+      Control focusedControl = FindFocusedControl(new List<Control> { });
       TextBox control = focusedControl as TextBox;
       if (control != null) control.SelectAll();
     }

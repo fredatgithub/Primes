@@ -143,7 +143,7 @@ namespace RenamePrimeFile
 
     private static void CreateLanguageFile()
     {
-      List<string> minimumVersion = new List<string>
+      var minimumVersion = new List<string>
       {
         "<?xml version=\"1.0\" encoding=\"utf-8\" ?>",
         "<terms>",
@@ -485,7 +485,7 @@ namespace RenamePrimeFile
       {
         textBoxOnefile,
         textBoxSeveralFiles
-      }); 
+      });
       var tb = focusedControl as TextBox;
       if (tb != null)
       {
@@ -513,7 +513,7 @@ namespace RenamePrimeFile
       {
         textBoxOnefile,
         textBoxSeveralFiles
-      }); 
+      });
       var tb = focusedControl as TextBox;
       if (tb != null)
       {
@@ -527,7 +527,7 @@ namespace RenamePrimeFile
       {
         textBoxOnefile,
         textBoxSeveralFiles
-      }); 
+      });
       TextBox control = focusedControl as TextBox;
       if (control != null) control.SelectAll();
     }
