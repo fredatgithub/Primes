@@ -809,6 +809,13 @@ namespace RenamePrimeFile
           Translate("Nothing to do"), MessageBoxButtons.OK);
         return;
       }
+
+      if (!File.Exists(textBoxOnefile.Text))
+      {
+        DisplayMessage(Translate("The file name or the path is not correct"),
+          Translate("File not correct"), MessageBoxButtons.OK);
+        return;
+      }
     }
   }
 }
