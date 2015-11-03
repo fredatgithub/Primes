@@ -754,5 +754,61 @@ namespace RenamePrimeFile
     {
       textBoxSeveralFiles.Text = PeekDirectory();
     }
+
+    private void textBoxOnefile_TextChanged(object sender, EventArgs e)
+    {
+      buttonRenameOneFile.Enabled = textBoxOnefile.Text.Length != 0;
+    }
+
+    private void textBoxSeveralFiles_TextChanged(object sender, EventArgs e)
+    {
+      buttonRenameSeveralFiles.Enabled = textBoxSeveralFiles.Text.Length != 0;
+    }
+
+    private static string[] GetDirectoryFileNameAndExtension(string filePath)
+    {
+      string directory = Path.GetDirectoryName(filePath);
+      string fileName = Path.GetFileNameWithoutExtension(filePath);
+      string extension = Path.GetExtension(filePath);
+
+      return new[] { directory, fileName, extension };
+    }
+
+    private void buttonRenameOneFile_Click(object sender, EventArgs e)
+    {
+      // verification of the correctness of the file name
+      var filename = GetDirectoryFileNameAndExtension(textBoxOnefile.Text)[1];
+      string firstNumberString = filename.Split('-')[0].Substring("primes".Length);
+      string secondNumberString = filename.Split('-')[1];
+      int firstNumber;
+      int secondNumber;
+      if (!int.TryParse(secondNumberString, out secondNumber))
+      {
+        MessageBox.Show("Error while converting second number of the file name " + secondNumberString +
+                        " to an integer");
+        return;
+      }
+
+      bool needFirstNumber = false;
+      if (!int.TryParse(firstNumberString, out firstNumber))
+      {
+        firstNumber = -1;
+        needFirstNumber = true;
+      }
+      
+      if (!filename.StartsWith("primes"))
+      {
+        DisplayMessage(Translate("The file doesn't start with the word primes"), 
+          Translate("Wrong file name"), MessageBoxButtons.OK);
+        return;
+      }
+
+      if (!needFirstNumber && !checkBoxCutFile.Checked)
+      {
+        DisplayMessage(Translate("The file name has a start number and you don't want it to be cut so there's nothing to do"),
+          Translate("Nothing to do"), MessageBoxButtons.OK);
+        return;
+      }
+    }
   }
 }
